@@ -1,8 +1,5 @@
 import Tour from './Tour';
 import {tours} from '../data'
-const getTourImage = (name) => {
-    return `/src/assets/images/${name}.jpeg`
-}
 
 function Tours() {
   return (

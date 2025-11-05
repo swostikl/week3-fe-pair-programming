@@ -1,3 +1,4 @@
+import PageLinks from './PageLinks'
 function Footer() {
   return (
       <footer className="section footer">

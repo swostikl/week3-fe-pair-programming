@@ -1,4 +1,6 @@
 import logo from '../assets/images/logo.svg'
+import SocialLinks from './SocialLinks'
+import PageLinks from './PageLinks'
 
 const Navbar = () => {
   return (
@@ -10,60 +12,8 @@ const Navbar = () => {
         <i className="fas fa-bars" />
       </button>
     </div>
-    <ul className="nav-links" id="nav-links">
-      <li>
-        <a href="#home" className="nav-link">
-          home
-        </a>
-      </li>
-      <li>
-        <a href="#about" className="nav-link">
-          about
-        </a>
-      </li>
-      <li>
-        <a href="#services" className="nav-link">
-          services
-        </a>
-      </li>
-      <li>
-        <a href="#tours" className="nav-link">
-          tours
-        </a>
-      </li>
-    </ul>
-    <ul className="nav-icons">
-      <li>
-        <a
-          href="https://www.facebook.com"
-          target="_blank"
-          rel="noreferrer"
-          className="nav-icon"
-        >
-          <i className="fab fa-facebook" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.x.com"
-          target="_blank"
-          rel="noreferrer"
-          className="nav-icon"
-        >
-          <i className="fab fa-x-twitter" />
-        </a>
-      </li>
-      <li>
-        <a
-          href="https://www.squarespace.com/"
-          target="_blank"
-          rel="noreferrer"
-          className="nav-icon"
-        >
-          <i className="fab fa-squarespace" />
-        </a>
-      </li>
-    </ul>
+    <PageLinks parentClass='nav-links' itemClass='nav-link'/>
+      <SocialLinks parentClass='nav-icons' itemClass='nav-icon'/>
   </div>
 </nav>
 
